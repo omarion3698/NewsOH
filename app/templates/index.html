@@ -1,0 +1,78 @@
+{% extends 'base.html'%} 
+{% import 'macros.html' as macro %} 
+
+{% block content %}
+<head>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+</head>
+
+<body>
+<div class="panel panel-default" style="background-color: black;">
+    <div class="panel-body" style="background-color: transparent;">
+    <div id="content" style="background-color: transparent;">
+
+      <img src="https://ydn-wpengine.netdna-ssl.com/wp-content/themes/ydnlabs/css/images/YDN%20Nameplate%20Medium.gif" style="background-color: white;width: 100%;height: 250px;">
+      <blockquote class="blockquote blockquote-reverse">
+        <footer class="blockquote-footer">
+          <cite title="Source Title"></cite>
+        </footer>
+      </blockquote>
+
+      <div class="container">
+        <div class="well">
+          <h3 style="text-align: center;font-family:Georgia, 'Times New Roman', Times, serif;font-style: italic;" id="general">NEWS SOURCES</h3>
+        </div>
+        {{macro.displaySourceList(general)}}
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id="business">Business</h1>
+        </div>
+        {{macro.displaySourceList(business)}}
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id='technology'>Technology</h1>
+        </div>
+        {{macro.displaySourceList(technology)}}
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id="sports">Sports</h1>
+        </div>
+        {{macro.displaySourceList(sports)}}
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id="health">Health</h1>
+        </div>
+        {{macro.displaySourceList(health)}}
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id="science">Science</h1>
+        </div>
+        {{macro.displaySourceList(science)}}
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id="entertainment">Entertainment</h1>
+        </div>
+        {{macro.displaySourceList(entertainment)}}
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+
+{% endblock%}
