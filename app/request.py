@@ -5,9 +5,8 @@ from .models import Articles,Source
 api_key = None
 # Getting the movie base url
 base_url = None
-#
+##
 source_url =None
-
 
 def configure_request(app):
     global api_key,base_url,source_url
@@ -71,7 +70,7 @@ def get_details(id):
 
 def process_sources(articles_list):
     '''
-    process dictionary and out out objects
+    process dictionary and out objects
     '''
     news_result = []
     source_dictionary ={}
@@ -94,7 +93,6 @@ def process_sources(articles_list):
         publishedAt = result.get('publishedAt')
 
         if urlToImage:
-            
             news_object = Articles(id,name,author,title,description,url,urlToImage, publishedAt)
             news_result.append(news_object)
     return news_result

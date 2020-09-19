@@ -2,7 +2,6 @@ class Articles:
     '''
     define news objects
     '''
-
     def __init__(self,d,name,author,title,description,url,urlToImage,publishedAt):
         self.id = id
         self.name = name
@@ -12,6 +11,7 @@ class Articles:
         self.url = url
         self.urlToImage = urlToImage
         self.publishedAt = publishedAt
+        
 class Source:
     '''
     define source
