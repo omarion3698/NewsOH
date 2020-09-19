@@ -1,5 +1,6 @@
 import urllib.request,json
 from .models import Articles,Source
+import logging
 
 # Getting api key
 api_key = None
@@ -20,6 +21,7 @@ def get_news(country,category):
     function of getting json response ro url
     '''
     get_news_url = base_url.format(country,api_key)
+    logging.INFO(get_news_url)
     with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
         get_news_response = json.loads(get_news_data)
@@ -56,6 +58,7 @@ def process_results(news_list):
 
 def get_details(id):
     get_news_details_url = source_url.format(id,api_key)
+    logging.INFO(get_news_details_url)
     with urllib.request.urlopen(get_news_details_url) as url:
         news_details_data = url.read()
         news_details_response = json.loads(news_details_data)
