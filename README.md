@@ -1,11 +1,24 @@
 # NewsOH
-This is an application that will help people who want to get real time news without having to watch TV for the news.  This application consumes News API.
 
 ## Author
 Omar Abdirahman Hussein
 
 ## Description
 This is an application that will help people who want to get real time news without having to watch TV for the news.  This application consumes News API.
+
+## User story
+
+1. A user would see various news sources on the homepage of the application.
+
+2. A user would also be able to select a news source and see all news articles from the selected news source in the application.
+
+3. A user will be able to see the image, description and the time a news article was created from the News-Articles tab.
+
+4. A click on an article and read the full article on the source website.
+
+## Livelink
+
+    omarion3698.github.io/newsoh/
 
 ## App Installation
 To get the code..
@@ -45,3 +58,10 @@ Open the application on your browser 127.0.0.1:5000.
 * Html
 
 * Css
+
+## Contact information
+If you have any question or contributions, please email me at [omaribinbakarivic@gmail.com]
+
+## License
+    *MIT License:
+    *Copyright (c) 2020 Omar Hussein
